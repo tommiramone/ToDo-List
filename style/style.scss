@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:active {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+header {
+  background-color: cornflowerblue;
+  box-shadow: 10px 4px 4px black;
+  padding: 1em;
+  text-align: center;
+
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+
+  #introTask {
+    margin: 1em 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+  }
+
+  #changeTask {
+    border: 1px solid black;
+    display: flex;
+    flex-flow: row;
+    margin: 0 1em;
+    border-radius: 0.5em;
+    padding: 1em;
+    display: none;
+    transition: all 0.5s 0s ease;
+  }
+
+  .task {
+    margin-top: 2em;
+    font-size: 1.5em;
+  }
+
+  #add {
+    padding: 0.8em;
+    background-color: cornflowerblue;
+    border-radius: 0.3em;
+    font-size: 1.1em;
+    margin-top: 1em;
+  }
+
+  #delete {
+    background-color: red;
+    padding: 1em;
+    margin: 0 1.5em;
+    border-radius: 0.4em;
+  }
+
+  #texto {
+    margin: 0 0 0.5em 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+  }
+
+  #edit {
+    background-color: green;
+    padding: 1em;
+    border-radius: 0.4em;
+  }
+
+  #tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dedede;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 1em;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 2em;
+}

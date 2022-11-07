@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <header>
+      <h1>ToDo List</h1>
+    </header>
+
+    <main>
+      <label for="introTask">
+        <input name="introTask" type="text" id="introTask" />
+        <button id="add">Submit</button>
+        <p
+          id="texto"
+          class="animate__animated animate__fadeIn animate__delay-1s"
+        >
+          Ingrese el nuevo valor y toque nuevamente el boton verde
+        </p>
+        <input
+          type="changeTask"
+          class="animate__animated animate__fadeInDown"
+          type="text"
+          id="changeTask"
+        />
+      </label>
+      <div class="task"></div>
+    </main>
+
+    <footer>© Pagina realizada por Tomás Duro</footer>
+
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
